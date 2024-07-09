@@ -1,0 +1,60 @@
+/* These styles make the body full-height */
+
+[data-theme='light'] {
+  --primary: #ce0e2d;
+  --primaryDark: #7b3330;
+  /*  primaryLight: '', */
+
+  --secondary: #eacd9d;
+  --secondaryDark: #ca8342;
+  /* // secondaryLight: '', */
+  --secondaryOverlay: rgba(202, 131, 66, 0.6);
+  --clearText: #212121;
+
+  --hintText: #414141;
+  --highlightText: #959695;
+  --lightText: #acacac;
+
+  --mid: #d1d1d1;
+
+  --light: #e0e0e0;
+  --highlight: #eee;
+  --hint: #fcfcfc;
+
+  --clear: #fff;
+
+  --background: #faf0e8;
+  /* background: #eee; */
+
+  --success: #5cb85c;
+  /* warning: '', */
+  --danger: #ff6962;
+}
+
+html,
+body {
+  height: 100vh;
+  max-width: 729px;
+  box-sizing: border-box;
+}
+/* These styles disable body scrolling if you are using <ScrollView> */
+/* These styles make the root element full-height */
+
+body {
+  margin: 0px;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+#root {
+  display: flex;
+  height: 100vh;
+  overflow: scroll;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  /* align-self: center; */
+}
+
+#root::-webkit-scrollbar {
+  display: none;
+}
