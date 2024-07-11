@@ -5,10 +5,7 @@
     <!-- <link rel="icon" href="%PUBLIC_URL%/favicon.ico" /> -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Burgerizzr online ordering service"
-    />
+    <meta name="description" content="Burgerizzr online ordering service" />
     <!-- <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" /> -->
     <!--
       manifest.json provides metadata used when your web app is installed on a
@@ -24,7 +21,61 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <link rel="stylesheet" href="styles.css">
+    <style>
+      @font-face {
+        font-family: 'FrutigerLTStd-Light';
+        src: url('./fonts/Frutiger LT Arabic 45 Light.ttf')
+            format('embedded-opentype'),
+          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 45 Light.ttf')
+            format('woff2'),
+          /* Super Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('woff'),
+          /* Pretty Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'FrutigerLTStd-Roman';
+        src: url('./fonts/Frutiger LT Arabic 55 Roman.ttf')
+            format('embedded-opentype'),
+          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 55 Roman.ttf')
+            format('woff2'),
+          /* Super Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('woff'),
+          /* Pretty Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'FrutigerLTStd-Bold';
+        src: url('./fonts/Frutiger LT Arabic 65 Bold.ttf')
+            format('embedded-opentype'),
+          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 65 Bold.ttf')
+            format('woff2'),
+          /* Super Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('woff'),
+          /* Pretty Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('svg'); /* Legacy iOS */
+      }
+      @font-face {
+        font-family: 'FrutigerLTStd-Black';
+        src: url('./fonts/Frutiger LT Arabic 75 black.ttf')
+            format('embedded-opentype'),
+          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 75 black.ttf')
+            format('woff2'),
+          /* Super Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('woff'),
+          /* Pretty Modern Browsers */
+            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('truetype'),
+          /* Safari, Android, iOS */
+            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('svg'); /* Legacy iOS */
+      }
+    </style>
+    <link rel="stylesheet" href="styles.css" />
     <title>React App</title>
   </head>
   <body data-theme="light">
@@ -40,10 +91,7 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-
-    <script src="bundle.web.js">
-    </script>
-    
+    <script src="bundle.web.js"></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRLqYGFuIiYNdZYOUydhRqliUvpoMmlM0"></script>
   </body>
 </html>
