@@ -33,25 +33,33 @@
 
 html,
 body {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   max-width: 729px;
   box-sizing: border-box;
 }
+
 /* These styles disable body scrolling if you are using <ScrollView> */
 /* These styles make the root element full-height */
 
 body {
   margin: 0px;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  overflow: hidden;
 }
 
 #root {
   display: flex;
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   overflow: scroll;
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
   /* align-self: center; */
 }
 

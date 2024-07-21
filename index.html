@@ -21,6 +21,19 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+
+    <script>
+      // Retrieve the language direction value from localStorage
+      const lang = localStorage.getItem('@LANGUAGE_STORAGE_KEY');
+      console.log('lang ', lang);
+
+      // Check if the language direction value is valid
+      document.documentElement.setAttribute(
+        'dir',
+        lang === 'en' ? 'ltr' : 'rtl',
+      );
+    </script>
+
     <style>
       @font-face {
         font-family: 'FrutigerLTStd-Light';
