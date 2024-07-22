@@ -25,69 +25,16 @@
     <script>
       // Retrieve the language direction value from localStorage
       const lang = localStorage.getItem('@LANGUAGE_STORAGE_KEY');
-      console.log('lang ', lang);
 
       // Check if the language direction value is valid
       document.documentElement.setAttribute(
         'dir',
         lang === 'en' ? 'ltr' : 'rtl',
       );
+      document.documentElement.setAttribute('lang', lang);
     </script>
 
-    <style>
-      @font-face {
-        font-family: 'FrutigerLTStd-Light';
-        src: url('./fonts/Frutiger LT Arabic 45 Light.ttf')
-            format('embedded-opentype'),
-          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 45 Light.ttf')
-            format('woff2'),
-          /* Super Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('woff'),
-          /* Pretty Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('truetype'),
-          /* Safari, Android, iOS */
-            url('./fonts/Frutiger LT Arabic 45 Light.ttf') format('svg'); /* Legacy iOS */
-      }
-      @font-face {
-        font-family: 'FrutigerLTStd-Roman';
-        src: url('./fonts/Frutiger LT Arabic 55 Roman.ttf')
-            format('embedded-opentype'),
-          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 55 Roman.ttf')
-            format('woff2'),
-          /* Super Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('woff'),
-          /* Pretty Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('truetype'),
-          /* Safari, Android, iOS */
-            url('./fonts/Frutiger LT Arabic 55 Roman.ttf') format('svg'); /* Legacy iOS */
-      }
-      @font-face {
-        font-family: 'FrutigerLTStd-Bold';
-        src: url('./fonts/Frutiger LT Arabic 65 Bold.ttf')
-            format('embedded-opentype'),
-          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 65 Bold.ttf')
-            format('woff2'),
-          /* Super Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('woff'),
-          /* Pretty Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('truetype'),
-          /* Safari, Android, iOS */
-            url('./fonts/Frutiger LT Arabic 65 Bold.ttf') format('svg'); /* Legacy iOS */
-      }
-      @font-face {
-        font-family: 'FrutigerLTStd-Black';
-        src: url('./fonts/Frutiger LT Arabic 75 black.ttf')
-            format('embedded-opentype'),
-          /* Internet Explorer */ url('./fonts/Frutiger LT Arabic 75 black.ttf')
-            format('woff2'),
-          /* Super Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('woff'),
-          /* Pretty Modern Browsers */
-            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('truetype'),
-          /* Safari, Android, iOS */
-            url('./fonts/Frutiger LT Arabic 75 black.ttf') format('svg'); /* Legacy iOS */
-      }
-    </style>
+    <style></style>
     <link rel="stylesheet" href="styles.css" />
     <title>React App</title>
   </head>
